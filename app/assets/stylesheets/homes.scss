@@ -1,0 +1,123 @@
+// ヘッダー部分
+header {
+  height: 70px;
+  width: 100%;
+  background-color: #FAB464;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+// ヘッダー全体
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+// ロゴ部分
+.header-left a {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  width: 124px;
+  line-height: 70px;
+}
+
+// ヘッダー右部分
+.header-right {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
+  display: flex;
+}
+
+// ヘッダー右部分のリンク
+.header-right a {
+  line-height: 70px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+// 「フリボとは」ホバー時
+.furibo:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// 「新規登録」ホバー時
+.new-regist:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// 「ログイン」ホバー時
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// 「ログアウト」ホバー時
+.logout:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// トップページメイン
+.top-wrapper {
+  // background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+// トップページコンテンツ
+.main-view {
+  color: black;
+  text-align: center;
+  margin-top: 170px;
+}
+
+// ボタン全体
+.btn-wrapper {
+  margin: 50px 0;
+}
+
+// 全てのボタン
+.btn {
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+// or
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+// ボタンホバー時
+.btn:hover {
+  opacity: 1;
+}
+
+// 新規登録ボタン
+.signup {
+  background-color: #239b76;
+  padding: 24px 72px;
+}
+
+// Facebookで登録ボタン
+.facebook {
+  background-color: #3b5998;
+  padding: 24px 72px;
+  margin-bottom: 15px;
+}
+
+// Googleで登録ボタン
+.google {
+  background-color: #FA3932;
+  padding: 24px 83px;
+}

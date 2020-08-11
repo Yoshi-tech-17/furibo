@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Furibo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <%= link_to "フリボ", root_path, class: "logo" %>
+        </div>
+        <% if user_signed_in? %>
+          <div class="header-right">
+            <%= link_to "フリボとは", "#", class: "furibo"%>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout"%>
+          </div>
+        <% else %>
+          <div class="header-right">
+            <%= link_to "フリボとは", "#", class: "furibo"%>
+            <%= link_to "新規登録", new_user_registration_path, class: "new-regist"%>
+            <%= link_to "ログイン", new_user_session_path, class: "login" %>
+          </div>
+        <% end %>
+      </div>
+    </header>
+    <%= yield %>
+  </body>
+</html>

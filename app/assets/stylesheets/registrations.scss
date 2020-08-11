@@ -1,0 +1,68 @@
+// .content {
+//   width: 400px;
+//   height: 450px;
+//   margin: 0 auto;
+//   padding: 150px;
+// }
+
+// .regist {
+//   text-align: center;
+//   padding: 40px;
+//   background-color: #F2F2F2;
+//   color: black;
+// }
+
+.content {
+  // background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+// トップページコンテンツ
+.regist {
+  color: black;
+  text-align: center;
+  margin-top: 170px;
+}
+
+.field {
+  margin-top: 20px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+#user_name {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#user_nickname {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#user_email {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#user_password {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#user_password_confirmation {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+}
